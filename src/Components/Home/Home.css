@@ -1,0 +1,14 @@
+@media (min-width: 992px) {  
+.card-design{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: navajowhite;
+}
+}
+h1{
+    position: relative;
+    bottom: 500px;
+    left: 30px;
+    color: white;
+    font-size: 50px;
+}
