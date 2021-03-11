@@ -18,6 +18,10 @@ const LeagueDetail = () => {
             .then(res => res.json())
             .then(data => setLeagueDetail(data.leagues[0]));
     }, [id])
+
+    let twitterLink = "https://twitter.com/";
+    let faceBookLink = "https://web.facebook.com/";
+    let youTubeLink = "https://www.youtube.com/";
     return (
         <Container className="mt-5">
             <img src={strFanart2} alt="" />
@@ -46,9 +50,9 @@ const LeagueDetail = () => {
                 </div>
             </Row>
             <div className="social-icon mt-5">
-                <a target="_blank" href="https://twitter.com/"><img src={twitter} alt="" /></a>
-                <a target="_blank" href="https://web.facebook.com/"><img src={facebook} alt="" /></a>
-                <a target="_blank" href="https://www.youtube.com/"><img src={youtube} alt="" /></a>
+                <a href={twitterLink}><img src={twitter} alt="" /></a>
+                <a href={faceBookLink}><img src={facebook} alt="" /></a>
+                <a href={youTubeLink}><img src={youtube} alt="" /></a>
             </div>
         </Container>
     );
